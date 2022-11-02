@@ -35,7 +35,7 @@ export default function Home() {
         <nav className="relative mx-auto  flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
           <div className="flex flex-1  items-center justify-between">
             <div className="flex w-full  items-center justify-between md:w-auto">
-              <a href="#">
+              <a >
               
                 <Image className=' h-[48px] w-auto '  src={engage}  alt='EngageSpot Logo' />
 
@@ -112,16 +112,16 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
               <div>
-                <div className=" items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
-                  <span className=" text-6xl font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">Build Notification <br/> Infrastructure for your <br/> Product</span>
+                <div className="  items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
+                  <span className=" leading-[75px] text-[49px] font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">Build Notification <br/> Infrastructure for your Product</span>
                   
                   
                 </div>
                 <h1 className="mt-4 text-4xl font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl md:text-xl mb-16">Say goodbye to building & maintaining a notification <br/> micro-service.</h1>
                 <div className='relative flex justify-between align-middle items-center px-3 rounded-lg  border-engageprimary border-solid border-2 h-[4.7rem] w-auto '>
                   
-                  <input type='email' placeholder='Enter your mail id ' className=' h-[60%] align-middle items-center pl-10 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   '/>
-                  <button className='items-center  border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] px-6 py-3 text-lg font-medium  rounded-[5px] font-mont text-white hover:bg-gray-700 '>Get Started </button>
+                  <input type='email' placeholder='Enter your mail id ' className=' w-96 focus:outline-none border-0 border-none h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   '/>
+                  <button className='items-center  border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] px-5 py-3 text-lg font-medium  rounded-[5px] font-mont text-white hover:bg-gray-700 '>Get Started </button>
                   
                 </div>
                 <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
@@ -159,7 +159,7 @@ export default function Home() {
 
 
         </div>
-        <div className='w-full mt-14 flex justify-center font-poppins font-semibold text-white pt-7 text-3xl bg-gradient-to-r from-[#3B006A] to-[#7D1874]  h-[311px]'>
+        <div className='w-full mt-20 flex justify-center font-poppins font-semibold text-white pt-7 text-3xl bg-gradient-to-r from-[#3B006A] to-[#7D1874]  h-[311px]'>
           <h1>TRUSTED BY DEVELOPERS AT</h1>
 
         </div>
@@ -169,61 +169,63 @@ export default function Home() {
           <h1 className='bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#71157A] font-poppins font-semibold text-[3.5rem] pt-[5rem] '>Features to build the <br/> Best notification experience</h1>
 
         </div>
-        <div className='relative  flex justify-center text-center items-center mt-[8.5rem] gap-x-10  px-4 sm:px-6 '>
+        <div className='relative  flex justify-center text-center mx-auto max-w-7xl  items-center mt-[8.5rem] gap-x-10  px-4 sm:px-6 '>
           
                     <FeatureCards heading='In-App Notification'message='In-app notification component for front-end apps' icon={messages}   />
                     <FeatureCards icon={messbox} heading='Email Notifications' message='Send email to users via Amazon SES, Sendgrid etc.' />
                     <FeatureCards icon={chatbox} heading='Web Push' message='Built in support for browser push notification ' />
         </div>
-        <div className='relative  flex justify-center text-center items-center mt-14  gap-x-10  px-4 sm:px-6 '>
+        <div className='relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6 '>
           
                     <FeatureCards icon={chat} heading='Mobile Push' message='Deliver push notification via FCM, APNS etc.' />
                     <FeatureCards icon={mail} heading='SMS' message='Send SMS notification to your users.' />
                     <FeatureCards icon={twomess} heading='Chat' message='Send chat messages to your users via Slack' />
         </div>
-        <div className='relative  flex justify-center text-center items-center mt-14 gap-x-10  px-4 sm:px-6 '>
+        <div className='relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6'>
           
                     <FeatureCards icon={object} heading='User Preferences' message='Allow your users to set their notification preferences. UI components included' />
                     <FeatureCards icon={setting} heading='Fully Customizable' message='Customize front-end components and our backend SDKs and APIs to suit your needs.' />
                     <FeatureCards icon={monitor} heading='Logs and Monitoring' message='Get access to logs from providers to debug cross-channel delivery and analyze performance.'/>
         </div>
 
-        <div className='w-full mt-14 flex text-2xl justify-center font-poppins  font-medium text-black pt-7  '>
+        <div className='w-full mt-14 flex text-2xl justify-center mx-auto max-w-7xl font-poppins  font-medium text-black pt-7  '>
           <h1>And many more features out-of-the box to build a notification system in minutes.</h1>
 
         </div>
-        <div className='relative  flex justify-center  mt-[3rem]   px-4 sm:px-6 '>
+        <div className='relative flex w-full  justify-start align-middle   mt-[3rem] mx-auto max-w-7xl gap-x-5   px-4 sm:px-6 '>
+          <div className='grid grid-cols-4 pl-16 gap-9  justify-between '>
               <FeatureSelect icons={tick} title='Delivery Reciept' />
               <FeatureSelect icons={tick} title='Read Reciept' />
               <FeatureSelect icons={tick} title='SMTP Support' />
               <FeatureSelect icons={tick} title='Notification' />
-        </div>
-        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+        
+    
               <FeatureSelect icons={tick} title='HMAC Auth' />
               <FeatureSelect icons={tick} title='User Identifiers' />
               <FeatureSelect icons={tick} title='Paginated Notifications' />
               <FeatureSelect icons={tick} title='React Hooks' />
-        </div>
-        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+        
+        
               <FeatureSelect icons={tick} title='Notification Images' />
               <FeatureSelect icons={tick} title='Emoji Support' />
               <FeatureSelect icons={tick} title='Notification Sounds' />
               <FeatureSelect icons={tick} title='Custom Actions' />
-        </div>
-        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+      
+        
               <FeatureSelect icons={tick} title='Fast Response Time' />
               <FeatureSelect icons={tick} title='Scalable Infrastructure' />
               <FeatureSelect icons={tick} title='Dedicated Support' />
               <FeatureSelect icons={tick} title='Enterprise SLA' />
+              </div>
         </div>
 
         <div className='relative flex flex-col items-center justify-center mt-24 '>
           <h1 className=' font-poppins text-5xl font-semibold
            bg-clip-text text-transparent 
-             bg-gradient-to-r from-[#3B006A] to-[#71157A] p-2 '>Pick channels for your messages</h1>
+             bg-gradient-to-r from-[#3B006A] to-[#71157A] p-2 mb-3 '>Pick channels for your messages</h1>
           <h2 className=' font-poppins font-medium text-2xl pb-12 '>and setup your first notification in 5 minutes</h2>
 
-          <div className=' bg-engagerose relative mb-40  '>
+          <div className=' bg-engagerose relative mb-40 rounded-xl  '>
              
             <div className='px-32 py-28 flex flex-col gap-12  '>
                  <Image src={one} alt='first' width={676} height={53} />
@@ -245,7 +247,7 @@ export default function Home() {
               <h3 className=' font-mont text-[2.5rem] text-4xl font-bold pb-8  '>A complete notifications system, setup in minutes</h3>
               <p className='text-2xl w-[76%] leading-9 pb-6 '>Get a complete product notification system that includes batching, cross-channel delivery, and preference management all within a few minutes. 10k notifications included per month for free.</p>
               <button className='bg-white font-mont font-bold text-xl
-              text-black py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
+               py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center text-engageprimary  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
               </div>
           </div>
 
