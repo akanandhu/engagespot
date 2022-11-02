@@ -93,11 +93,11 @@ export default function Home() {
             <div className="px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
               <div>
                 <div className=" items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
-                  <span className=" text-6xl font-bold leading-10 font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">Build Notification <br/> Infrastructure for your <br/> Product</span>
+                  <span className=" text-6xl font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">Build Notification <br/> Infrastructure for your <br/> Product</span>
                   
                   
                 </div>
-                <h1 className="mt-4 text-4xl font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl md:text-xl mb-16">Say goodbye to building & maintaining a notification <br/> microservice.</h1>
+                <h1 className="mt-4 text-4xl font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl md:text-xl mb-16">Say goodbye to building & maintaining a notification <br/> micro-service.</h1>
                 <div className='relative flex justify-between align-middle items-center px-3 rounded-lg  border-engageprimary border-solid border-2 h-[4.7rem] w-auto '>
                   
                   <input type='email' placeholder='Enter your mail id ' className=' h-[60%] align-middle items-center pl-10 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   '/>
