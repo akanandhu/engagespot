@@ -2,6 +2,26 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import engage from  '../public/assets/engage.png'
+import FeatureCards from '../components/FeatureCards'
+import messages from '../public/assets/message.png';
+import messbox from '../public/assets/messbox.png'
+import chat from '../public/assets/chat.png'
+import chatbox from '../public/assets/chatbox.png'
+import mail from '../public/assets/mail.png'
+import twomess from '../public/assets/twomess.png'
+import monitor from '../public/assets/monitor.png'
+import object from '../public/assets/Object.png'
+import setting from '../public/assets/setting.png'
+import FeatureSelect from '../components/FeatureSelect'
+import tick from '../public/assets/tick.png'
+import ButtonBox from '../components/ButtonBox'
+import one from '../public/assets/one.png'
+import two from '../public/assets/two.png'
+import three from '../public/assets/three.png'
+import four from '../public/assets/four.png'
+import five from '../public/assets/five.png'
+import six from '../public/assets/six.png'
+import arrow from '../public/assets/arrow.png'
 
 export default function Home() {
   return (
@@ -10,7 +30,7 @@ export default function Home() {
     <div className="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
       {/* <Image className=' h-[20px] w-auto '  src={engage}  alt='EngageSpot Logo' /> */}
     </div>
-    <div className="relative pt-6 pb-16 sm:pb-24 ">
+    <div className="relative pt-8 pb-16 sm:pb-24 ">
       <div>
         <nav className="relative mx-auto  flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
           <div className="flex flex-1  items-center justify-between">
@@ -35,7 +55,7 @@ export default function Home() {
 
               <a href="#" className=" font-semibold text-engageprimary hover:text-gray-300">Pricing</a>
   
-              <a href="#" className="font-semibold text-engageprimary hover:text-gray-300">Integration</a>
+              <a href="#" className="font-semibold text-engageprimary hover:text-gray-300">Integrations</a>
   
               <a href="#" className="font-semibold text-engageprimary hover:text-gray-300">Documentation</a>
   
@@ -113,7 +133,7 @@ export default function Home() {
                       {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/workcation-logo-gray-400.svg" alt="Workcation"/> */}
                     </div>
                     <div className="flex justify-center px-1">
-                      {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/statickit-logo-gray-400.svg" alt="StaticKit"/> */}
+                     
                     </div>
                   </div>
                 </div>
@@ -143,6 +163,99 @@ export default function Home() {
           <h1>TRUSTED BY DEVELOPERS AT</h1>
 
         </div>
+
+        
+        <div className='flex justify-center text-center'>
+          <h1 className='bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#71157A] font-poppins font-semibold text-[3.5rem] pt-[5rem] '>Features to build the <br/> Best notification experience</h1>
+
+        </div>
+        <div className='relative  flex justify-center text-center items-center mt-[8.5rem] gap-x-10  px-4 sm:px-6 '>
+          
+                    <FeatureCards heading='In-App Notification'message='In-app notification component for front-end apps' icon={messages}   />
+                    <FeatureCards icon={messbox} heading='Email Notifications' message='Send email to users via Amazon SES, Sendgrid etc.' />
+                    <FeatureCards icon={chatbox} heading='Web Push' message='Built in support for browser push notification ' />
+        </div>
+        <div className='relative  flex justify-center text-center items-center mt-14  gap-x-10  px-4 sm:px-6 '>
+          
+                    <FeatureCards icon={chat} heading='Mobile Push' message='Deliver push notification via FCM, APNS etc.' />
+                    <FeatureCards icon={mail} heading='SMS' message='Send SMS notification to your users.' />
+                    <FeatureCards icon={twomess} heading='Chat' message='Send chat messages to your users via Slack' />
+        </div>
+        <div className='relative  flex justify-center text-center items-center mt-14 gap-x-10  px-4 sm:px-6 '>
+          
+                    <FeatureCards icon={object} heading='User Preferences' message='Allow your users to set their notification preferences. UI components included' />
+                    <FeatureCards icon={setting} heading='Fully Customizable' message='Customize front-end components and our backend SDKs and APIs to suit your needs.' />
+                    <FeatureCards icon={monitor} heading='Logs and Monitoring' message='Get access to logs from providers to debug cross-channel delivery and analyze performance.'/>
+        </div>
+
+        <div className='w-full mt-14 flex text-2xl justify-center font-poppins  font-medium text-black pt-7  '>
+          <h1>And many more features out-of-the box to build a notification system in minutes.</h1>
+
+        </div>
+        <div className='relative  flex justify-center  mt-[3rem]   px-4 sm:px-6 '>
+              <FeatureSelect icons={tick} title='Delivery Reciept' />
+              <FeatureSelect icons={tick} title='Read Reciept' />
+              <FeatureSelect icons={tick} title='SMTP Support' />
+              <FeatureSelect icons={tick} title='Notification' />
+        </div>
+        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+              <FeatureSelect icons={tick} title='HMAC Auth' />
+              <FeatureSelect icons={tick} title='User Identifiers' />
+              <FeatureSelect icons={tick} title='Paginated Notifications' />
+              <FeatureSelect icons={tick} title='React Hooks' />
+        </div>
+        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+              <FeatureSelect icons={tick} title='Notification Images' />
+              <FeatureSelect icons={tick} title='Emoji Support' />
+              <FeatureSelect icons={tick} title='Notification Sounds' />
+              <FeatureSelect icons={tick} title='Custom Actions' />
+        </div>
+        <div className='relative  flex justify-center  mt-[3.2rem]   px-4 sm:px-6 '>
+              <FeatureSelect icons={tick} title='Fast Response Time' />
+              <FeatureSelect icons={tick} title='Scalable Infrastructure' />
+              <FeatureSelect icons={tick} title='Dedicated Support' />
+              <FeatureSelect icons={tick} title='Enterprise SLA' />
+        </div>
+
+        <div className='relative flex flex-col items-center justify-center mt-24 '>
+          <h1 className=' font-poppins text-5xl font-semibold
+           bg-clip-text text-transparent 
+             bg-gradient-to-r from-[#3B006A] to-[#71157A] p-2 '>Pick channels for your messages</h1>
+          <h2 className=' font-poppins font-medium text-2xl pb-12 '>and setup your first notification in 5 minutes</h2>
+
+          <div className=' bg-engagerose relative mb-40  '>
+             
+            <div className='px-32 py-28 flex flex-col gap-12  '>
+                 <Image src={one} alt='first' width={676} height={53} />
+                 <Image src={two} alt='first' width={809} height={53} />
+                 <Image src={three} alt='first' width={494} height={53} />
+                 <Image src={four} alt='first' width={427} height={53} />
+                 <Image src={five} alt='first' width={279} height={53} />
+                 <Image src={six} alt='first' width={402} height={53} />
+            </div>
+           
+  
+          </div>
+        </div>
+
+        <div className='flex justify-center'>
+          <div className=' w-[90%] text-white  flex justify-center items-center
+             bg-gradient-to-r from-[#3B006A] to-[#71157A] rounded-[1.25rem] '>
+              <div className=' pt-16 pb-8 w-[77%] text-center flex justify-center items-center flex-col'>
+              <h3 className=' font-mont text-[2.5rem] text-4xl font-bold pb-8  '>A complete notifications system, setup in minutes</h3>
+              <p className='text-2xl w-[76%] leading-9 pb-6 '>Get a complete product notification system that includes batching, cross-channel delivery, and preference management all within a few minutes. 10k notifications included per month for free.</p>
+              <button className='bg-white font-mont font-bold text-xl
+              text-black py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
+              </div>
+          </div>
+
+        </div>
+
+        
+
+        
+
+
       </main>
     </div>
   </div>

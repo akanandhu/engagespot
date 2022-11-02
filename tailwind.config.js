@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors:{
         engageprimary: '#7D1874',
+        engagecard : '#BA73F24D',
+        engagerose : '#EAD5FB38',
+        engageborder : '#760F81',
         
 
       },
