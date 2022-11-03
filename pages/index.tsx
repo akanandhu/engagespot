@@ -24,14 +24,15 @@ import six from '../public/assets/six.png'
 import arrow from '../public/assets/arrow.png'
 import second from '../public/assets/second.png'
 import Footer from '../components/Footer'
+
 export default function Home() {
   return (
-    <div>
-      <div className="relative overflow-hidden ">
+    <div className=' h-full  '>
+      <div className="relative overflow-hidden  ">
     <div className="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
       {/* <Image className=' h-[20px] w-auto '  src={engage}  alt='EngageSpot Logo' /> */}
     </div>
-    <div className="relative min-w-7xl flex flex-col pt-8 pb-16 sm:pb-24 ">
+    <div className="relative min-w-7xl min-h-[100%]  flex flex-col pt-8  ">
       <div>
         <nav className="relative mx-auto  flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
           <div className="flex flex-1  items-center justify-between">
@@ -52,11 +53,11 @@ export default function Home() {
                </div>
             </div>
             <div className="hidden space-x-10 md:ml-10 md:flex md:pr-[7%] font-poppins text-lg ">
-            <a href="#" className=" font-semibold text-engageprimary hover:text-gray-300">Products</a>
+            <a href="#" className=" cursor-pointer font-semibold text-engageprimary hover:text-gray-300">Products</a>
 
-              <a href="#" className=" font-semibold text-engageprimary hover:text-gray-300">Pricing</a>
+              <a href="#" className=" cursor-pointer font-semibold text-engageprimary hover:text-gray-300">Pricing</a>
   
-              <a href="#" className="font-semibold text-engageprimary hover:text-gray-300">Integrations</a>
+              <a href="#" className=" font-semibold text-engageprimary hover:text-gray-300">Integrations</a>
   
               <a href="#" className="font-semibold text-engageprimary hover:text-gray-300">Documentation</a>
   
@@ -108,10 +109,10 @@ export default function Home() {
           </div>
            </div>
   
-      <main className="mt-16 sm:mt-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-            <div className="px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+      <main className="mt-16 sm:mt-24 ">
+        <div className="mx-auto max-w-7xl ">
+          <div className="  lg:grid lg:grid-cols-12 justify-between">
+            <div className="  px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
               <div>
                 <div className="  items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
                   <span className=" leading-[75px] text-[49px] font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">Build Notification <br/> Infrastructure for your Product</span>
@@ -127,6 +128,7 @@ export default function Home() {
                    rounded-lg font-mont text-white hover:bg-gray-700 '>Get Started </button>
                   
                 </div>
+                
                 <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                   <div className="flex flex-wrap items-start justify-between">
                     <div className="flex justify-center px-1">
@@ -142,20 +144,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-16  sm:mt-24 lg:col-span-6 lg:mt-0">
-              
-                  <div className='absolute w-[100%] h-[100%] left-[25.5%] top-[0.9%]  '>
+            <div className='absolute max-w-[100%] max-h-[100%] w-[100%] h-[100%] left-[25.5%] top-[0.9%]  '>
                    
-                    <Image alt='image'  src={second} className='object-scale-down' />
-  
-                   
-                  </div>
-  
-                
-               
+               <Image alt='image'  src={second} className='object-scale-down' />
 
-            
-            </div>
+     
+                </div>
           </div>
 
 
@@ -247,7 +241,7 @@ export default function Home() {
               <div className=' pt-16 pb-8 w-[77%] text-center flex justify-center items-center flex-col'>
               <h3 className=' font-mont text-[2.5rem] text-4xl font-bold pb-8  '>A complete notifications system, setup in minutes</h3>
               <p className='text-2xl w-[76%] leading-9 pb-6 '>Get a complete product notification system that includes batching, cross-channel delivery, and preference management all within a few minutes. 10k notifications included per month for free.</p>
-              <button className='bg-white font-mont font-bold text-xl
+              <button className='bg-white font-mont font-bold text-xl 
                py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center text-engageprimary cursor-pointer  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
               </div>
           </div>
@@ -256,15 +250,15 @@ export default function Home() {
 
         
 
-        
-
-
-      </main>
-      <footer >
-                <div className=' mx-auto max-w-9xl mt-[8.5rem] flex relaive flex-col lg:h-[40rem] bg-gradient-to-r from-[#3B006A] to-[#71157A] '>
+        <footer className='' >
+                <div  className='  mx-auto max-w-9xl mt-[8.5rem] flex relaive flex-col  bg-gradient-to-r from-[#3B006A] to-[#71157A] '>
                   <Footer />
                 </div>
       </footer>
+
+
+      </main>
+    
     </div>
   </div>
     </div>
