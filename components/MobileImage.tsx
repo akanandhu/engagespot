@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import lines from "../public/assets/moblines.png";
-import mainline from "../public/assets/mobline.png";
+// import mainline from "../public/assets/mobline.png";
 
 type MobileImageProps = {
     main : any,
@@ -19,7 +19,7 @@ function MobileImage({main,second}:MobileImageProps) {
       <Image className=' flex-1 object-fill' alt='mob' src={lines} width={30} height={12} />
       <Image className=' flex-1 object-fill' alt='mob' src={second} width={598} height={109} />
       <div className='mt-8'>
-     <Image className=' object-scale-down' alt='mob' src={mainline} width={656} />
+     {/* <Image className=' object-scale-down' alt='mob' src={mainline} width={656} /> */}
         </div>
     </div>
   )
