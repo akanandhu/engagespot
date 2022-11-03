@@ -40,7 +40,7 @@ export default function Home() {
           <Image className=' h-[78px] w-auto '  src={engage}  alt='EngageSpot Logo' />
         </div>
         <div className="relative min-w-7xl min-h-[100%]  flex flex-col pt-8  ">
-          <div>
+          <div className="z-10">
             <nav
               className="relative mx-auto  flex max-w-7xl items-center justify-between px-10 sm:px-6"
               aria-label="Global"
@@ -102,66 +102,64 @@ export default function Home() {
 
            
           </div>
-
-          <main className="mt-16 sm:mt-24 ">
-            <div className="mx-auto max-w-7xl ">
-              <div className="  lg:grid lg:grid-cols-12 justify-between">
-                <div className="  px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
-                  <div>
-                    <div className="  md:pt-[5.5rem] lg:pt-0 pt-[2rem]   items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
-                      <span className=" leading-[75px] text-[49px] font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">
-                        Build Notification <br /> Infrastructure for your
-                        Product
-                      </span>
-                    </div>
-                    <h1 className="mt-4 text-4xl lg:text-xl   font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl  mb-16">
-                      Say goodbye to building & maintaining a notification{" "}
-                      <br /> micro-service.
-                    </h1>
-                    <div className=" relative md:flex justify-between align-middle items-center md:px-3 rounded-lg  md:border-engageprimary md:border-solid md:border-2 h-[6rem] md:h-[4.7rem] w-auto ">
-                      <input 
-                        type="email"
-                        placeholder="Enter your mail id "
-                        className="  md:mb-0 mb-9 rounded-lg md:rounded-none border-engageprimary border-solid border-2 w-[100%] md:w-96 focus:outline-none md:border-0 md:border-none    h-[80%] md:h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   "
-                      />
-                      <button
-                        className="items-center  w-[100%] h-[68px]
+          <div className="mx-auto max-w-7xl sm:mt-24  relative mt-16">
+            <div className="  lg:grid lg:grid-cols-12 justify-between">
+              <div className=" z-10 px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+                <div>
+                  <div className="  md:pt-[5.5rem] lg:pt-0 pt-[2rem]   items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
+                    <span className=" leading-[75px] text-[49px] font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">
+                      Build Notification <br /> Infrastructure for your Product
+                    </span>
+                  </div>
+                  <h1 className="mt-4 text-4xl lg:text-xl   font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl  mb-16">
+                    Say goodbye to building & maintaining a notification <br />{" "}
+                    micro-service.
+                  </h1>
+                  <div className=" relative md:flex justify-between align-middle items-center md:px-3 rounded-lg  md:border-engageprimary md:border-solid md:border-2 h-[6rem] md:h-[4.7rem] w-auto ">
+                    <input
+                      type="email"
+                      placeholder="Enter your mail id "
+                      className="  md:mb-0 mb-9 rounded-lg md:rounded-none border-engageprimary border-solid border-2 w-[100%] md:w-96 focus:outline-none md:border-0 md:border-none    h-[80%] md:h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   "
+                    />
+                    <button
+                      className="items-center  w-[100%] h-[68px]
                     border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] md:h-[54px] md:w-[169px] flex justify-center align-middle md:px-[2.5%] md:py-3 text-2xl md:text-lg font-medium 
                    rounded-lg font-mont text-white hover:bg-gray-700 "
-                      >
-                        Get Started
-                      </button>
-                    </div>
+                    >
+                      Get Started
+                    </button>
+                  </div>
 
-                    <div className="md:hidden mx-auto pt-[25%] flex justify-center">
+                  <div className="md:hidden mx-auto pt-[25%] flex justify-center">
+                    <Image
+                      src={mobilesecond}
+                      alt="mobile"
+                      height={3199}
+                      width={366}
+                    />
+                  </div>
 
-                      <Image src={mobilesecond} alt='mobile' height={3199} width={366} />
-
-                    </div>
-
-                    <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
-                      <div className="flex flex-wrap items-start justify-between">
-                        <div className="flex justify-center px-1">
-                          {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/tuple-logo-gray-400.svg" alt="Tuple"/> */}
-                        </div>
-                        <div className="flex justify-center px-1">
-                          {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/workcation-logo-gray-400.svg" alt="Workcation"/> */}
-                        </div>
-                        <div className="flex justify-center px-1"></div>
+                  <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
+                    <div className="flex flex-wrap items-start justify-between">
+                      <div className="flex justify-center px-1">
+                        {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/tuple-logo-gray-400.svg" alt="Tuple"/> */}
                       </div>
+                      <div className="flex justify-center px-1">
+                        {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/workcation-logo-gray-400.svg" alt="Workcation"/> */}
+                      </div>
+                      <div className="flex justify-center px-1"></div>
                     </div>
                   </div>
                 </div>
-                <div className="absolute -right-20 lg:visible invisible top-[0.9%]  ">
-                  <Image
-                    alt="image"
-                    src={second}
-                    
-                  
-                  />
-                </div>
               </div>
             </div>
+            <div className="absolute -right-52 lg:visible invisible -top-32 ">
+              <Image alt="image" src={second} />
+            </div>
+          </div>
+
+          <main className="mt-16 sm:mt-24 ">
+
             <div className="w-full mt-20 flex justify-center font-poppins font-semibold text-white pt-7 text-3xl bg-gradient-to-r from-[#3B006A] to-[#7D1874]  h-[311px]">
               <h1>TRUSTED BY DEVELOPERS AT</h1>
             </div>
@@ -323,7 +321,7 @@ export default function Home() {
             </div>
 
             <footer className="">
-              <div className="  mx-auto max-w-9xl mt-[8.5rem] flex relaive flex-col  bg-gradient-to-r from-[#3B006A] to-[#71157A] ">
+              <div className="  mx-auto max-w-9xl mt-[8.5rem] flex  relaive flex-col  bg-gradient-to-r from-[#3B006A] to-[#71157A] ">
                 <Footer />
               </div>
             </footer>
