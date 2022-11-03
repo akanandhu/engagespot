@@ -232,7 +232,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="relative flex w-full justify-center  md:justify-center align-middle mt-[3rem] mx-auto max-w-7xl gap-x-5   px-4 sm:px-6 ">
-              <div className="grid bg-red-500 grid-cols-2 lg:grid-cols-4 pl-[7.8rem] gap-9 grid-wrap  lg:justify-between gap-x-[13.5rem] ">
+              <div className="grid grid-cols-2 lg:grid-cols-4 pl-[7.8rem] gap-9 grid-wrap  lg:justify-between gap-x-[13.5rem] ">
                 <FeatureSelect icons={tick} title="Delivery Reciept" />
                 <FeatureSelect icons={tick} title="Read Reciept" />
                 <FeatureSelect icons={tick} title="SMTP Support" />
