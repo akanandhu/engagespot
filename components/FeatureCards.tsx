@@ -12,7 +12,7 @@ type FeatureCardsProps = {
 
 function FeatureCards({heading,message,icon}:FeatureCardsProps) {
   return (
-    <div className=' cursor-pointer hover:shadow-[0_0px_16px_0px_rgba(205,205,205,0.46)] w-[40%]  pt-[1.15rem] pb-7 px-6 rounded-[19px] h-auto flex flex-col justify-center items-center text-center '>
+    <div className='  hover:shadow-[0_0px_16px_0px_rgba(205,205,205,0.46)] w-[40%]  pt-[1.15rem] pb-7 px-6 rounded-[19px] h-auto flex flex-col justify-center items-center text-center '>
         <div className='flex flex-col justify-center items-center gap-3 w-[74%] '>
             
         <div className=' relative flex justify-center  align-middle items-center  bg-engagecard   rounded-[10px] w-[3.7rem] h-14   '>
@@ -27,7 +27,7 @@ function FeatureCards({heading,message,icon}:FeatureCardsProps) {
           <div>
         <h3 className=' bg-clip-text text-transparent  
          bg-gradient-to-r from-[#3B006A] to-[#71157A] 
-         leading-6 font-poppins text-sm font-semibold pr-4'>
+         leading-6 font-poppins cursor-pointer text-sm font-semibold pr-4'>
             Learn More </h3>
             </div>
             <div>

@@ -22,7 +22,7 @@ import four from '../public/assets/four.png'
 import five from '../public/assets/five.png'
 import six from '../public/assets/six.png'
 import arrow from '../public/assets/arrow.png'
-
+import second from '../public/assets/second.png'
 export default function Home() {
   return (
     <div>
@@ -121,7 +121,9 @@ export default function Home() {
                 <div className='relative flex justify-between align-middle items-center px-3 rounded-lg  border-engageprimary border-solid border-2 h-[4.7rem] w-auto '>
                   
                   <input type='email' placeholder='Enter your mail id ' className=' w-96 focus:outline-none border-0 border-none h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   '/>
-                  <button className='items-center  border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] px-5 py-3 text-lg font-medium  rounded-[5px] font-mont text-white hover:bg-gray-700 '>Get Started </button>
+                  <button className='items-center
+                    border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] h-[54px] w-[169px] flex justify-center align-middle px-[2.5%] py-3 text-lg font-medium 
+                   rounded-lg font-mont text-white hover:bg-gray-700 '>Get Started </button>
                   
                 </div>
                 <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
@@ -139,11 +141,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
+            <div className="mt-16 relative sm:mt-24 lg:col-span-6 lg:mt-0">
               <div className="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
                 <div className="px-4 py-8 sm:px-10">
-                  <div>
-                    {/* <p className="text-sm font-medium text-gray-700">Sign in with</p> */}
+                  <div className='absolute'>
+                    {/* <Image src={second} height={1500} width={1200} /> */}
   
                    
                   </div>
@@ -193,7 +195,7 @@ export default function Home() {
 
         </div>
         <div className='relative flex w-full  justify-start align-middle   mt-[3rem] mx-auto max-w-7xl gap-x-5   px-4 sm:px-6 '>
-          <div className='grid grid-cols-4 pl-16 gap-9  justify-between '>
+          <div className='grid grid-cols-4 pl-[7.8rem] gap-9 grid-wrap justify-between gap-x-[13.5rem] '>
               <FeatureSelect icons={tick} title='Delivery Reciept' />
               <FeatureSelect icons={tick} title='Read Reciept' />
               <FeatureSelect icons={tick} title='SMTP Support' />
