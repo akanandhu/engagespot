@@ -23,11 +23,11 @@ function FeatureCards({heading,message,icon}:FeatureCardsProps) {
         
        
         </div>
-        <div className='flex mt-5  '>
+        <div className='flex mt-5 justify-center align-middle items-center w-[74%] gap-2   '>
           <div>
         <h3 className=' bg-clip-text text-transparent  
          bg-gradient-to-r from-[#3B006A] to-[#71157A] 
-         leading-6 font-poppins cursor-pointer text-sm font-semibold pr-4'>
+         leading-6 font-poppins cursor-pointer text-sm font-semibold '>
             Learn More </h3>
             </div>
             <div>

@@ -179,8 +179,8 @@ export default function Home() {
         </div>
         <div className='relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6 '>
           
-                    <FeatureCards icon={chat} heading='Mobile Push' message='Deliver push notification via FCM, APNS etc.' />
-                    <FeatureCards icon={mail} heading='SMS' message='Send SMS notification to your users.' />
+                    <FeatureCards icon={chat} heading='Mobile Push' message='Deliver push notifications via FCM, APNS etc.' />
+                    <FeatureCards icon={mail} heading='SMS' message='Send SMS notifications to your users.' />
                     <FeatureCards icon={twomess} heading='Chat' message='Send chat messages to your users via Slack' />
         </div>
         <div className='relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6'>
