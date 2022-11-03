@@ -23,6 +23,7 @@ import five from '../public/assets/five.png'
 import six from '../public/assets/six.png'
 import arrow from '../public/assets/arrow.png'
 import second from '../public/assets/second.png'
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
@@ -30,7 +31,7 @@ export default function Home() {
     <div className="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
       {/* <Image className=' h-[20px] w-auto '  src={engage}  alt='EngageSpot Logo' /> */}
     </div>
-    <div className="relative pt-8 pb-16 sm:pb-24 ">
+    <div className="relative min-w-7xl flex flex-col pt-8 pb-16 sm:pb-24 ">
       <div>
         <nav className="relative mx-auto  flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
           <div className="flex flex-1  items-center justify-between">
@@ -141,19 +142,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-16 relative sm:mt-24 lg:col-span-6 lg:mt-0">
-              <div className="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
-                <div className="px-4 py-8 sm:px-10">
-                  <div className='absolute'>
-                    {/* <Image src={second} height={1500} width={1200} /> */}
+            <div className="mt-16  sm:mt-24 lg:col-span-6 lg:mt-0">
+              
+                  <div className='absolute w-[100%] h-[100%] left-[25.5%] top-[0.9%]  '>
+                   
+                    <Image alt='image'  src={second} className='object-scale-down' />
   
                    
                   </div>
   
                 
-                </div>
-                
-              </div>
+               
 
             
             </div>
@@ -249,7 +248,7 @@ export default function Home() {
               <h3 className=' font-mont text-[2.5rem] text-4xl font-bold pb-8  '>A complete notifications system, setup in minutes</h3>
               <p className='text-2xl w-[76%] leading-9 pb-6 '>Get a complete product notification system that includes batching, cross-channel delivery, and preference management all within a few minutes. 10k notifications included per month for free.</p>
               <button className='bg-white font-mont font-bold text-xl
-               py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center text-engageprimary  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
+               py-5 pl-6 pr-7 rounded-[10px] flex gap-3 justify-center items-center text-engageprimary cursor-pointer  '>Get Started for free <Image alt='arrow' height={12} width={22} src={arrow}/></button>
               </div>
           </div>
 
@@ -261,6 +260,11 @@ export default function Home() {
 
 
       </main>
+      <footer >
+                <div className=' mx-auto max-w-9xl mt-[8.5rem] flex relaive flex-col lg:h-[40rem] bg-gradient-to-r from-[#3B006A] to-[#71157A] '>
+                  <Footer />
+                </div>
+      </footer>
     </div>
   </div>
     </div>
