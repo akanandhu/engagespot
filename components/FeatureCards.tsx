@@ -11,8 +11,8 @@ type FeatureCardsProps = {
 
 function FeatureCards({ heading, message, icon }: FeatureCardsProps) {
   return (
-    <div className="  hover:shadow-[0_0px_16px_0px_rgba(205,205,205,0.46)] w-[40%]  pt-[1.15rem] pb-7 px-6 rounded-[19px] h-auto flex flex-col justify-center items-center text-center ">
-      <div className="flex flex-col justify-center items-center gap-3 w-[74%] ">
+    <div className=" mt-6 lg:mt-0  hover:shadow-[0_0px_16px_0px_rgba(205,205,205,0.46)] w-[85%] lg:w-[40%]  pt-[1.15rem] pb-7 px-6 rounded-[19px] h-auto flex flex-col justify-start  lg:align-start md:items-center  text-start lg:align-middle lg:justify-center lg:items-center lg:text-center ">
+      <div className="flex flex-col justify-start lg:justify-center lg:text-center text-start md:text-center  items-start md:align-center md:items-center gap-3 w-[74%] ">
         <div className=" relative flex justify-center  align-middle items-center  bg-engagecard   rounded-[10px] w-[3.7rem] h-14   ">
           <Image
             className="abosulte"
@@ -27,7 +27,7 @@ function FeatureCards({ heading, message, icon }: FeatureCardsProps) {
           {message}
         </h2>
       </div>
-      <div className="flex mt-5 justify-center align-middle items-center w-[74%] gap-2   ">
+      <div className="flex mt-5 justify-start md:justify-center md:align-middle items-center w-[74%] gap-2   ">
         <div>
           <h3
             className=" bg-clip-text text-transparent  

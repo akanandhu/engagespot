@@ -24,25 +24,29 @@ import six from "../public/assets/six.png";
 import arrow from "../public/assets/arrow.png";
 import second from "../public/assets/second.png";
 import Footer from "../components/Footer";
+import mobilesecond from '../public/assets/mobilesecond.png'
+import MobileImage from "../components/MobileImage";
+import mailmob from "../public/assets/mailmob.png";
+import mobone from "../public/assets/mob1.png";
 
 export default function Home() {
   return (
-    <div className=" h-full  ">
+    <div className=" h-full   ">
       <div className="relative overflow-hidden  ">
         <div
-          className="hidden sm:absolute sm:inset-0 sm:block"
+          className="lg:hidden sm:absolute lg:p-0 pt-[6.1rem] pl-[1.5rem]   sm:inset-0 sm:block"
           aria-hidden="true"
         >
-          {/* <Image className=' h-[20px] w-auto '  src={engage}  alt='EngageSpot Logo' /> */}
+          <Image className=' h-[78px] w-auto '  src={engage}  alt='EngageSpot Logo' />
         </div>
         <div className="relative min-w-7xl min-h-[100%]  flex flex-col pt-8  ">
           <div>
             <nav
-              className="relative mx-auto  flex max-w-7xl items-center justify-between px-4 sm:px-6"
+              className="relative mx-auto  flex max-w-7xl items-center justify-between px-10 sm:px-6"
               aria-label="Global"
             >
               <div className="flex flex-1  items-center justify-between">
-                <div className="flex w-full  items-center justify-between md:w-auto">
+                <div className="lg:flex w-full hidden   items-center justify-between md:w-auto">
                   <a>
                     <Image
                       className=" h-[48px] w-auto "
@@ -50,33 +54,9 @@ export default function Home() {
                       alt="EngageSpot Logo"
                     />
                   </a>
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <button
-                      type="button"
-                      className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
-                      aria-expanded="false"
-                    >
-                      <span className="sr-only">Open main menu</span>
-                      {/* <!-- Heroicon name: outline/bars-3 --> */}
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                  
                 </div>
-                <div className="hidden space-x-10 md:ml-10 md:flex md:pr-[7%] font-poppins text-lg ">
+                <div className="hidden space-x-10 lg:ml-10 lg:flex md:pr-[7%] font-poppins text-lg ">
                   <a
                     href="#"
                     className=" cursor-pointer font-semibold text-engageprimary hover:text-gray-300"
@@ -113,84 +93,14 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="hidden md:flex">
+              <div className="hidden lg:flex">
                 <button className="inline-flex  items-center  border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] px-4 py-2 text-lg font-medium  rounded-[5px] font-poppins text-white hover:bg-gray-700">
                   Get Started
                 </button>
               </div>
             </nav>
 
-            {/* <!--
-          Mobile menu
-        --> */}
-            <div className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-              <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
-                <div className="flex items-center justify-between px-5 pt-4">
-                  <div>
-                    {/* <Image width={50} height={50} className="h-8 w-auto" src="https://tailwindui.com/Image/logos/mark.svg?color=indigo&shade=600" alt=""/> */}
-                  </div>
-                  <div className="-mr-2">
-                    <button
-                      type="button"
-                      className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    >
-                      <span className="sr-only">Close menu</span>
-                      {/* <!-- Heroicon name: outline/x-mark --> */}
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div className="space-y-1 px-2 pt-2 pb-3">
-                  <a
-                    href="#"
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                  >
-                    Product
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                  >
-                    Features
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                  >
-                    Marketplace
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                  >
-                    Company
-                  </a>
-                </div>
-                <a
-                  href="#"
-                  className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
-                >
-                  Log in
-                </a>
-              </div>
-            </div>
+           
           </div>
 
           <main className="mt-16 sm:mt-24 ">
@@ -198,29 +108,35 @@ export default function Home() {
               <div className="  lg:grid lg:grid-cols-12 justify-between">
                 <div className="  px-4 py-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
                   <div>
-                    <div className="  items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
+                    <div className="  md:pt-[5.5rem] lg:pt-0 pt-[2rem]   items-center rounded-full  py-1 pr-2  sm:text-base lg:text-sm xl:text-base">
                       <span className=" leading-[75px] text-[49px] font-bold  font-poppins bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] ">
                         Build Notification <br /> Infrastructure for your
                         Product
                       </span>
                     </div>
-                    <h1 className="mt-4 text-4xl font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl md:text-xl mb-16">
+                    <h1 className="mt-4 text-4xl lg:text-xl   font-poppins font-normal tracking-tight bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#7D1874] sm:text-5xl  mb-16">
                       Say goodbye to building & maintaining a notification{" "}
                       <br /> micro-service.
                     </h1>
-                    <div className="relative flex justify-between align-middle items-center px-3 rounded-lg  border-engageprimary border-solid border-2 h-[4.7rem] w-auto ">
-                      <input
+                    <div className=" relative md:flex justify-between align-middle items-center md:px-3 rounded-lg  md:border-engageprimary md:border-solid md:border-2 h-[6rem] md:h-[4.7rem] w-auto ">
+                      <input 
                         type="email"
                         placeholder="Enter your mail id "
-                        className=" w-96 focus:outline-none border-0 border-none h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   "
+                        className="  md:mb-0 mb-9 rounded-lg md:rounded-none border-engageprimary border-solid border-2 w-[100%] md:w-96 focus:outline-none md:border-0 md:border-none    h-[80%] md:h-[60%] align-middle items-center pl-7 placeholder:font-mont placeholder:text-black placeholder:opacity-50 placeholder:text-lg placeholder:font-semibold   "
                       />
                       <button
-                        className="items-center
-                    border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] h-[54px] w-[169px] flex justify-center align-middle px-[2.5%] py-3 text-lg font-medium 
+                        className="items-center  w-[100%] h-[68px]
+                    border border-transparent bg-gradient-to-r from-[#3B006A] to-[#7D1874] md:h-[54px] md:w-[169px] flex justify-center align-middle md:px-[2.5%] md:py-3 text-2xl md:text-lg font-medium 
                    rounded-lg font-mont text-white hover:bg-gray-700 "
                       >
-                        Get Started{" "}
+                        Get Started
                       </button>
+                    </div>
+
+                    <div className="md:hidden mx-auto pt-[25%] flex justify-center">
+
+                      <Image src={mobilesecond} alt='mobile' height={3199} width={366} />
+
                     </div>
 
                     <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
@@ -236,11 +152,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute max-w-[100%] max-h-[100%] w-[100%] h-[100%] left-[25.5%] top-[0.9%]  ">
+                <div className="absolute -right-20 lg:visible invisible top-[0.9%]  ">
                   <Image
                     alt="image"
                     src={second}
-                    className="object-scale-down"
+                    
+                  
                   />
                 </div>
               </div>
@@ -249,12 +166,14 @@ export default function Home() {
               <h1>TRUSTED BY DEVELOPERS AT</h1>
             </div>
 
-            <div className="flex justify-center text-center">
+            <div className="flex flex-col justify-center text-center">
               <h1 className="bg-clip-text text-transparent   bg-gradient-to-r from-[#3B006A] to-[#71157A] font-poppins font-semibold text-[3.5rem] pt-[5rem] ">
                 Features to build the <br /> Best notification experience
               </h1>
+              <h3 className="md:hidden mx-auto pt-5 leading-7 w-[85%] font-poppins ">We've built awesome features so you don't have to start from scratch.
+              Just integrate our SDKs and APIs to build a scalable notification system for your product.</h3>
             </div>
-            <div className="relative  flex justify-center text-center mx-auto max-w-7xl  items-center mt-[8.5rem] gap-x-10  px-4 sm:px-6 ">
+            <div className="relative  flex flex-col lg:flex-row  justify-start  md:justify-center text-center mx-auto max-w-7xl  items-center mt-[6rem] lg:mt-[8.5rem] gap-x-10  px-4 sm:px-6 ">
               <FeatureCards
                 heading="In-App Notification"
                 message="In-app notification component for front-end apps"
@@ -271,7 +190,7 @@ export default function Home() {
                 message="Built in support for browser push notification "
               />
             </div>
-            <div className="relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6 ">
+            <div className="relative  flex flex-col lg:flex-row  justify-start  md:justify-center mx-auto max-w-7xl items-center lg:mt-14  gap-x-10  px-4 sm:px-6 ">
               <FeatureCards
                 icon={chat}
                 heading="Mobile Push"
@@ -288,7 +207,7 @@ export default function Home() {
                 message="Send chat messages to your users via Slack"
               />
             </div>
-            <div className="relative  flex justify-center text-center mx-auto max-w-7xl items-center mt-14  gap-x-10  px-4 sm:px-6">
+            <div className="relative  flex flex-col lg:flex-row  justify-start  md:justify-center mx-auto max-w-7xl items-center lg:mt-14  gap-x-10  px-4 sm:px-6">
               <FeatureCards
                 icon={object}
                 heading="User Preferences"
@@ -306,14 +225,14 @@ export default function Home() {
               />
             </div>
 
-            <div className="w-full mt-14 flex text-2xl justify-center mx-auto max-w-7xl font-poppins  font-medium text-black pt-7  ">
+            <div className="w-[80%] mt-[11rem] lg:mt-14 flex text-2xl justify-center mx-auto max-w-7xl font-poppins  font-medium text-black  lg:pt-7  ">
               <h1>
                 And many more features out-of-the box to build a notification
                 system in minutes.
               </h1>
             </div>
-            <div className="relative flex w-full  justify-start align-middle   mt-[3rem] mx-auto max-w-7xl gap-x-5   px-4 sm:px-6 ">
-              <div className="grid grid-cols-4 pl-[7.8rem] gap-9 grid-wrap justify-between gap-x-[13.5rem] ">
+            <div className="relative flex w-full justify-center  md:justify-center align-middle mt-[3rem] mx-auto max-w-7xl gap-x-5   px-4 sm:px-6 ">
+              <div className="grid grid-cols-2 lg:grid-cols-4 pl-[7.8rem] gap-9 grid-wrap  lg:justify-between gap-x-[13.5rem] ">
                 <FeatureSelect icons={tick} title="Delivery Reciept" />
                 <FeatureSelect icons={tick} title="Read Reciept" />
                 <FeatureSelect icons={tick} title="SMTP Support" />
@@ -338,18 +257,34 @@ export default function Home() {
 
             <div className="relative flex flex-col items-center justify-center mt-24 ">
               <h1
-                className=" font-poppins text-5xl font-semibold
+                className=" text-center font-poppins text-5xl font-semibold
            bg-clip-text text-transparent 
              bg-gradient-to-r from-[#3B006A] to-[#71157A] p-2 mb-3 "
               >
                 Pick channels for your messages
               </h1>
-              <h2 className=" font-poppins font-medium text-2xl pb-12 ">
+              <h2 className=" text-center font-poppins font-medium text-2xl pb-12 ">
                 and setup your first notification in 5 minutes
               </h2>
 
-              <div className=" bg-engagerose relative mb-40 rounded-xl  ">
-                <div className="px-32 py-28 flex flex-col gap-12  ">
+              <div className=" bg-engagerose relative  lg:mb-40 rounded-xl  ">
+
+                {/* //For Mobile */}
+
+              <div className="px-32 py-28 flex flex-col gap-9 jus visible lg:hidden ">
+                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileImage main={mailmob} second={mobone} />
+
+                        
+                </div>
+
+                {/* For Desktop */}
+
+                <div className="px-32 py-28  lg:flex flex-col gap-12 hidden  ">
                   <Image src={one} alt="first" width={676} height={53} />
                   <Image src={two} alt="first" width={809} height={53} />
                   <Image src={three} alt="first" width={494} height={53} />
@@ -357,12 +292,13 @@ export default function Home() {
                   <Image src={five} alt="first" width={279} height={53} />
                   <Image src={six} alt="first" width={402} height={53} />
                 </div>
+
               </div>
             </div>
 
             <div className="flex justify-center">
               <div
-                className=" w-[90%] text-white  flex justify-center items-center
+                className=" w-[90%] text-white mt-[17%] lg:mt-0  flex justify-center items-center
              bg-gradient-to-r from-[#3B006A] to-[#71157A] rounded-[1.25rem] "
               >
                 <div className=" pt-16 pb-8 w-[77%] text-center flex justify-center items-center flex-col">
