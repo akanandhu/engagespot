@@ -28,8 +28,12 @@ import mobilesecond from '../public/assets/mobilesecond.png';
 import MobileImage from "../components/MobileImage";
 import mailmob from "../public/assets/mailmob.png";
 import mobone from "../public/assets/mob1.png";
-
-
+import MobileFeature from "../components/MobileFeature";
+import twomain from '../public/assets/twomain.png';
+import threemain from '../public/assets/threemain.png';
+import fourmain from '../public/assets/fourmain.png';
+import fivemain from '../public/assets/fivemain.png';
+import sixmain from '../public/assets/sixmain.png';
 export default function Home() {
   return (
     <div className=" h-full   ">
@@ -131,13 +135,14 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <div className="  md:hidden mx-auto pt-[25%] flex justify-center">
+                  <div className="   lg:hidden mx-auto pt-[25%] flex justify-center">
                     <Image
-                    className="w-full"
+                    className="w-full object-cover "
                       src={mobilesecond}
                       alt="mobile"
                       height={3199}
                       width={366}
+                      
                     />
                   </div>
 
@@ -273,11 +278,11 @@ export default function Home() {
 
               <div className="px-32 py-28 flex flex-col gap-9 jus visible lg:hidden ">
                           <MobileImage main={mailmob} second={mobone} />
-                          <MobileImage main={mailmob} second={mobone} />
-                          <MobileImage main={mailmob} second={mobone} />
-                          <MobileImage main={mailmob} second={mobone} />
-                          <MobileImage main={mailmob} second={mobone} />
-                          <MobileImage main={mailmob} second={mobone} />
+                          <MobileFeature name={twomain} />
+                          <MobileFeature name={threemain} />
+                          <MobileFeature name={fourmain} />
+                          <MobileFeature name={fivemain} />                          
+                          <MobileFeature name={sixmain} />
 
                         
                 </div>
