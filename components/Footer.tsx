@@ -7,7 +7,7 @@ import line from "../public/assets/line.png";
 
 function Footer() {
   return (
-    <div className="mx-auto max-w-9xl w-[90%]  pt-[3.4rem] pl-[1.6rem] pb-[1.5rem] pr-[6.5rem] ">
+    <div className="mx-auto max-w-7xl w-[90%]  pt-[3.4rem] pl-[1.6rem] pb-[1.5rem] pr-[6.5rem] ">
       <div className="flex flex-col">
         <div className="flex pl-[3.4rem] pb-[11rem]">
           <div>

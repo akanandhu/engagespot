@@ -322,7 +322,7 @@ export default function Home() {
             </div>
 
             <footer className="">
-              <div className="  mx-auto max-w-9xl mt-[8.5rem] flex  relaive flex-col  bg-gradient-to-r from-[#3B006A] to-[#71157A] ">
+              <div className="  mx-auto max-w-9xl mt-[8.5rem] flex align-middle items-center  relaive flex-col  bg-gradient-to-r from-[#3B006A] to-[#71157A] ">
                 <Footer />
               </div>
             </footer>
