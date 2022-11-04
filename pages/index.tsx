@@ -137,11 +137,10 @@ export default function Home() {
 
                   <div className="   lg:hidden mx-auto pt-[25%] flex justify-center">
                     <Image
-                    className="w-full object-cover "
+                    className="w-[100%] h-[100%] object-none "
                       src={mobilesecond}
                       alt="mobile"
-                      height={3199}
-                      width={366}
+
                       
                     />
                   </div>
