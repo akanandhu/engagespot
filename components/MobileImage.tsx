@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import blackline from '../public/assets/blackline.png'
 import lines from "../public/assets/moblines.png";
 // import mainline from "../public/assets/mobline.png";
 
@@ -19,7 +19,12 @@ function MobileImage({main,second}:MobileImageProps) {
       <Image className=' flex-1 object-fill' alt='mob' src={lines} width={30} height={12} />
       <Image className=' flex-1 object-fill' alt='mob' src={second} width={598} height={109} />
       <div className='mt-8'>
-     {/* <Image className=' object-scale-down' alt='mob' src={mainline} width={656} /> */}
+     {/* <Image className=' object-scale-down' alt='mob' src={blackline} width={656} /> */}
+
+        <div className=' border-b-black border-solid border-2 opacity-10  w-[376px]'>
+
+        </div>
+
         </div>
     </div>
   )
