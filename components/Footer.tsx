@@ -8,7 +8,7 @@ import line from "../public/assets/line.png";
 function Footer() {
   return (
     <div className="mx-auto max-w-7xl w-[90%]  pt-[3.4rem] pl-[1.6rem] pb-[1.5rem] pr-[6.5rem] ">
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <div className="flex pl-[3.4rem] pb-[11rem]">
           <div>
             <Image src={engagelogo} alt="engagelogo" width={260} height={41} />
@@ -34,7 +34,7 @@ function Footer() {
               />
             </div>
           </div>
-          <div className="flex  gap-12 pt-[4rem] pl-[6.8rem] text-xl ">
+          <div className="md:flex  gap-12 md:visible hidden pt-[4rem] pl-[6.8rem] text-xl ">
             <div className="text-white font-poppins ">
               <ul className=" text-[22px] font-semibold pb-[0.9rem]">
                 Products
@@ -76,7 +76,7 @@ function Footer() {
           <div>
             <Image src={line} alt="line" />
           </div>
-          <div className="flex text-white font-poppins pt-[1.25rem] pl-[5.35rem] ">
+          <div className="hidden  md:flex text-white font-poppins pt-[1.25rem] pl-[5.35rem] ">
             <div className="pr-9">© 2022 Engagespot. All rights reserved.</div>
             <div className=" cursor-pointer pr-[1.85rem]">Help</div>
             <div className=" cursor-pointer pr-[1.85rem]">
