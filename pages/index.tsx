@@ -29,6 +29,7 @@ import MobileImage from "../components/MobileImage";
 import mailmob from "../public/assets/mailmob.png";
 import mobone from "../public/assets/mob1.png";
 
+
 export default function Home() {
   return (
     <div className=" h-full   ">
@@ -154,8 +155,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute -right-52 lg:visible invisible -top-32 ">
-              <Image alt="image" src={second} />
+            <div className="absolute left-56 w-[100%] lg:visible invisible -top-36 ">
+              <Image className=" object-fill " alt="image" src={second} />
             </div>
           </div>
 
