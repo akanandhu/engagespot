@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import blackline from '../public/assets/blackline.png'
+
 import lines from "../public/assets/moblines.png";
 // import mainline from "../public/assets/mobline.png";
 
