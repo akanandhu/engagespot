@@ -145,7 +145,7 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
+                  <div className="lg:mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                     <div className="flex flex-wrap items-start justify-between">
                       <div className="flex justify-center px-1">
                         {/* <Image width={50} height={50} className="h-9 sm:h-10" src="https://tailwindui.com/Image/logos/tuple-logo-gray-400.svg" alt="Tuple"/> */}
