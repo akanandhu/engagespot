@@ -130,8 +130,9 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <div className="md:hidden mx-auto pt-[25%] flex justify-center">
+                  <div className="  md:hidden mx-auto pt-[25%] flex justify-center">
                     <Image
+                    className="w-full"
                       src={mobilesecond}
                       alt="mobile"
                       height={3199}
@@ -223,7 +224,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="w-[80%] mt-[11rem] lg:mt-14 flex text-2xl justify-center mx-auto max-w-7xl font-poppins  font-medium text-black  lg:pt-7  ">
+            <div className="w-[80%] text-center mt-[11rem] lg:mt-14 flex text-2xl justify-center mx-auto max-w-7xl font-poppins  font-medium text-black  lg:pt-7  ">
               <h1>
                 And many more features out-of-the box to build a notification
                 system in minutes.
