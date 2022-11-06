@@ -39,7 +39,7 @@ export default function Home() {
     <div className=" h-full   ">
       <div className="relative overflow-hidden  ">
         <div
-          className="lg:hidden sm:absolute lg:p-0 pt-[6.1rem] pl-[1.5rem]   sm:inset-0 sm:block"
+          className="lg:hidden sm:absolute lg:p-0 pt-[6.1rem] pl-[1.5rem] pr-[1.5rem]   sm:inset-0 sm:block"
           aria-hidden="true"
         >
           <Image className=' h-[78px] w-auto '  src={engage}  alt='EngageSpot Logo' />
@@ -137,7 +137,7 @@ export default function Home() {
 
                   <div className="   lg:hidden mx-auto pt-[25%] flex justify-center">
                     <Image
-                    className="w-[100%] h-[100%] object-none "
+                    className="w-[100%] h-[100%] object-none md:object-none "
                       src={mobilesecond}
                       alt="mobile"
 
@@ -164,9 +164,9 @@ export default function Home() {
             </div>
           </div>
 
-          <main className="mt-16 sm:mt-24 ">
+          <main className="mt-0 md:mt-24 ">
 
-            <div className="w-full mt-20 flex justify-center font-poppins font-semibold text-white pt-7 text-3xl bg-gradient-to-r from-[#3B006A] to-[#7D1874]  h-[311px]">
+            <div className="w-full mt-20 flex justify-center text-center font-poppins font-semibold text-white pt-7 text-3xl bg-gradient-to-r from-[#3B006A] to-[#7D1874]  h-[311px]">
               <h1>TRUSTED BY DEVELOPERS AT</h1>
             </div>
 
